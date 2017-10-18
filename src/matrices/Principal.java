@@ -1,4 +1,7 @@
 package matrices;
+
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author luffynando
@@ -1031,7 +1034,7 @@ public class Principal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
         
     private void a11tActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_a11tActionPerformed
-        
+      
     }//GEN-LAST:event_a11tActionPerformed
 
     private void a31tActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_a31tActionPerformed
@@ -1239,13 +1242,12 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void val_detActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_val_detActionPerformed
-        // TODO add your handling code here:
     }//GEN-LAST:event_val_detActionPerformed
 
     private void SActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SActionPerformed
     System.exit(0);
     }//GEN-LAST:event_SActionPerformed
-
+   
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton S;
     public static java.awt.TextField a11a;
