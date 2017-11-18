@@ -53,7 +53,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jScrollPane1" min="-2" pref="192" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
-                              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                              <Component id="DimensionButton" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace pref="44" max="32767" attributes="0"/>
@@ -65,7 +65,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                          <Component id="DimensionButton" min="-2" max="-2" attributes="0"/>
                           <Group type="102" attributes="0">
                               <Component id="jLabel1" min="-2" pref="29" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -112,16 +112,16 @@
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Component class="javax.swing.JTextPane" name="jTextPane1">
+                <Component class="javax.swing.JTextPane" name="dimensionM">
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JButton" name="jButton1">
+            <Component class="javax.swing.JButton" name="DimensionButton">
               <Properties>
                 <Property name="text" type="java.lang.String" value="OK"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DimensionButtonActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
@@ -168,32 +168,32 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="39" pref="39" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="textField49" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
-                          <Component id="textField50" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
-                          <Component id="textField51" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
-                          <Component id="textField52" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
+                          <Component id="im11" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
+                          <Component id="im21" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
+                          <Component id="im31" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
+                          <Component id="im41" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="textField53" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
-                          <Component id="textField54" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
-                          <Component id="textField55" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
-                          <Component id="textField56" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
+                          <Component id="im42" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
+                          <Component id="im32" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
+                          <Component id="im22" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
+                          <Component id="im12" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="textField61" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
-                          <Component id="textField62" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
-                          <Component id="textField63" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
-                          <Component id="textField64" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
+                          <Component id="im13" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
+                          <Component id="im23" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
+                          <Component id="im33" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
+                          <Component id="im43" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jButton2" min="-2" max="-2" attributes="0"/>
-                          <Component id="textField57" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
-                          <Component id="textField58" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
-                          <Component id="textField59" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
-                          <Component id="textField60" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
+                          <Component id="IMButton" min="-2" max="-2" attributes="0"/>
+                          <Component id="im24" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
+                          <Component id="im34" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
+                          <Component id="im44" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
+                          <Component id="im14" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="39" max="32767" attributes="0"/>
                   </Group>
@@ -207,46 +207,46 @@
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="textField49" min="-2" pref="35" max="-2" attributes="0"/>
+                              <Component id="im11" min="-2" pref="35" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                              <Component id="textField50" min="-2" pref="35" max="-2" attributes="0"/>
+                              <Component id="im21" min="-2" pref="35" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                              <Component id="textField51" min="-2" pref="35" max="-2" attributes="0"/>
+                              <Component id="im31" min="-2" pref="35" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                              <Component id="textField52" min="-2" pref="35" max="-2" attributes="0"/>
+                              <Component id="im41" min="-2" pref="35" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
-                              <Component id="textField56" min="-2" pref="35" max="-2" attributes="0"/>
+                              <Component id="im12" min="-2" pref="35" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                              <Component id="textField55" min="-2" pref="35" max="-2" attributes="0"/>
+                              <Component id="im22" min="-2" pref="35" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                              <Component id="textField54" min="-2" pref="35" max="-2" attributes="0"/>
+                              <Component id="im32" min="-2" pref="35" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                              <Component id="textField53" min="-2" pref="35" max="-2" attributes="0"/>
+                              <Component id="im42" min="-2" pref="35" max="-2" attributes="0"/>
                           </Group>
                           <Group type="103" alignment="1" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <Component id="textField60" min="-2" pref="35" max="-2" attributes="0"/>
+                                  <Component id="im14" min="-2" pref="35" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                                  <Component id="textField57" min="-2" pref="35" max="-2" attributes="0"/>
+                                  <Component id="im24" min="-2" pref="35" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                                  <Component id="textField58" min="-2" pref="35" max="-2" attributes="0"/>
+                                  <Component id="im34" min="-2" pref="35" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                                  <Component id="textField59" min="-2" pref="35" max="-2" attributes="0"/>
+                                  <Component id="im44" min="-2" pref="35" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
-                                  <Component id="textField61" min="-2" pref="35" max="-2" attributes="0"/>
+                                  <Component id="im13" min="-2" pref="35" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                                  <Component id="textField62" min="-2" pref="35" max="-2" attributes="0"/>
+                                  <Component id="im23" min="-2" pref="35" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                                  <Component id="textField63" min="-2" pref="35" max="-2" attributes="0"/>
+                                  <Component id="im33" min="-2" pref="35" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                                  <Component id="textField64" min="-2" pref="35" max="-2" attributes="0"/>
+                                  <Component id="im43" min="-2" pref="35" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                       <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                      <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                      <Component id="IMButton" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -259,45 +259,96 @@
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton2">
+            <Component class="javax.swing.JButton" name="IMButton">
               <Properties>
                 <Property name="text" type="java.lang.String" value="OK"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="IMButtonActionPerformed"/>
               </Events>
             </Component>
-            <Component class="java.awt.TextField" name="textField49">
+            <Component class="java.awt.TextField" name="im11">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="im11ActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+              </AuxValues>
             </Component>
-            <Component class="java.awt.TextField" name="textField50">
+            <Component class="java.awt.TextField" name="im21">
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+              </AuxValues>
             </Component>
-            <Component class="java.awt.TextField" name="textField51">
+            <Component class="java.awt.TextField" name="im31">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="im31ActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+              </AuxValues>
             </Component>
-            <Component class="java.awt.TextField" name="textField52">
+            <Component class="java.awt.TextField" name="im41">
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+              </AuxValues>
             </Component>
-            <Component class="java.awt.TextField" name="textField53">
+            <Component class="java.awt.TextField" name="im42">
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+              </AuxValues>
             </Component>
-            <Component class="java.awt.TextField" name="textField54">
+            <Component class="java.awt.TextField" name="im32">
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+              </AuxValues>
             </Component>
-            <Component class="java.awt.TextField" name="textField55">
+            <Component class="java.awt.TextField" name="im22">
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+              </AuxValues>
             </Component>
-            <Component class="java.awt.TextField" name="textField56">
+            <Component class="java.awt.TextField" name="im12">
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+              </AuxValues>
             </Component>
-            <Component class="java.awt.TextField" name="textField57">
+            <Component class="java.awt.TextField" name="im24">
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+              </AuxValues>
             </Component>
-            <Component class="java.awt.TextField" name="textField58">
+            <Component class="java.awt.TextField" name="im34">
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+              </AuxValues>
             </Component>
-            <Component class="java.awt.TextField" name="textField59">
+            <Component class="java.awt.TextField" name="im44">
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+              </AuxValues>
             </Component>
-            <Component class="java.awt.TextField" name="textField60">
+            <Component class="java.awt.TextField" name="im14">
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+              </AuxValues>
             </Component>
-            <Component class="java.awt.TextField" name="textField61">
+            <Component class="java.awt.TextField" name="im13">
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+              </AuxValues>
             </Component>
-            <Component class="java.awt.TextField" name="textField62">
+            <Component class="java.awt.TextField" name="im23">
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+              </AuxValues>
             </Component>
-            <Component class="java.awt.TextField" name="textField63">
+            <Component class="java.awt.TextField" name="im33">
             </Component>
-            <Component class="java.awt.TextField" name="textField64">
+            <Component class="java.awt.TextField" name="im43">
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+              </AuxValues>
             </Component>
           </SubComponents>
         </Container>

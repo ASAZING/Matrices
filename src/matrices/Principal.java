@@ -1,4 +1,8 @@
 package matrices;
+
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author luffynando
@@ -22,28 +26,28 @@ public class Principal extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
-        jButton1 = new javax.swing.JButton();
+        dimensionM = new javax.swing.JTextPane();
+        DimensionButton = new javax.swing.JButton();
         jFrame2 = new javax.swing.JFrame();
         jPanel11 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        textField49 = new java.awt.TextField();
-        textField50 = new java.awt.TextField();
-        textField51 = new java.awt.TextField();
-        textField52 = new java.awt.TextField();
-        textField53 = new java.awt.TextField();
-        textField54 = new java.awt.TextField();
-        textField55 = new java.awt.TextField();
-        textField56 = new java.awt.TextField();
-        textField57 = new java.awt.TextField();
-        textField58 = new java.awt.TextField();
-        textField59 = new java.awt.TextField();
-        textField60 = new java.awt.TextField();
-        textField61 = new java.awt.TextField();
-        textField62 = new java.awt.TextField();
-        textField63 = new java.awt.TextField();
-        textField64 = new java.awt.TextField();
+        IMButton = new javax.swing.JButton();
+        im11 = new java.awt.TextField();
+        im21 = new java.awt.TextField();
+        im31 = new java.awt.TextField();
+        im41 = new java.awt.TextField();
+        im42 = new java.awt.TextField();
+        im32 = new java.awt.TextField();
+        im22 = new java.awt.TextField();
+        im12 = new java.awt.TextField();
+        im24 = new java.awt.TextField();
+        im34 = new java.awt.TextField();
+        im44 = new java.awt.TextField();
+        im14 = new java.awt.TextField();
+        im13 = new java.awt.TextField();
+        im23 = new java.awt.TextField();
+        im33 = new java.awt.TextField();
+        im43 = new java.awt.TextField();
         jSeparator1 = new javax.swing.JSeparator();
         jPanel1 = new javax.swing.JPanel();
         label1 = new java.awt.Label();
@@ -121,12 +125,12 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel4.setText("3. Matriz de (4 x 4)");
 
-        jScrollPane1.setViewportView(jTextPane1);
+        jScrollPane1.setViewportView(dimensionM);
 
-        jButton1.setText("OK");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        DimensionButton.setText("OK");
+        DimensionButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                DimensionButtonActionPerformed(evt);
             }
         });
 
@@ -147,7 +151,7 @@ public class Principal extends javax.swing.JFrame {
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1)))
+                        .addComponent(DimensionButton)))
                 .addContainerGap(44, Short.MAX_VALUE))
         );
         jPanel10Layout.setVerticalGroup(
@@ -155,7 +159,7 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(jPanel10Layout.createSequentialGroup()
                 .addGap(17, 17, 17)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton1)
+                    .addComponent(DimensionButton)
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
@@ -193,10 +197,22 @@ public class Principal extends javax.swing.JFrame {
         jLabel5.setText("Ingrese su matriz");
         jLabel5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        jButton2.setText("OK");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        IMButton.setText("OK");
+        IMButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                IMButtonActionPerformed(evt);
+            }
+        });
+
+        im11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                im11ActionPerformed(evt);
+            }
+        });
+
+        im31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                im31ActionPerformed(evt);
             }
         });
 
@@ -211,29 +227,29 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(jPanel11Layout.createSequentialGroup()
                 .addGap(39, 39, 39)
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(textField49, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textField50, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textField51, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textField52, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(im11, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(im21, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(im31, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(im41, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(27, 27, 27)
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(textField53, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textField54, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textField55, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textField56, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(im42, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(im32, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(im22, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(im12, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(38, 38, 38)
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(textField61, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textField62, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textField63, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textField64, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(im13, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(im23, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(im33, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(im43, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(37, 37, 37)
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton2)
-                    .addComponent(textField57, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textField58, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textField59, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textField60, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(IMButton)
+                    .addComponent(im24, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(im34, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(im44, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(im14, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(39, Short.MAX_VALUE))
         );
         jPanel11Layout.setVerticalGroup(
@@ -244,40 +260,40 @@ public class Principal extends javax.swing.JFrame {
                 .addGap(20, 20, 20)
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel11Layout.createSequentialGroup()
-                        .addComponent(textField49, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(im11, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(9, 9, 9)
-                        .addComponent(textField50, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(im21, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(9, 9, 9)
-                        .addComponent(textField51, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(im31, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(9, 9, 9)
-                        .addComponent(textField52, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(im41, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel11Layout.createSequentialGroup()
-                        .addComponent(textField56, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(im12, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(9, 9, 9)
-                        .addComponent(textField55, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(im22, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(9, 9, 9)
-                        .addComponent(textField54, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(im32, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(9, 9, 9)
-                        .addComponent(textField53, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(im42, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel11Layout.createSequentialGroup()
-                            .addComponent(textField60, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(im14, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(9, 9, 9)
-                            .addComponent(textField57, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(im24, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(9, 9, 9)
-                            .addComponent(textField58, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(im34, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(9, 9, 9)
-                            .addComponent(textField59, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(im44, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel11Layout.createSequentialGroup()
-                            .addComponent(textField61, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(im13, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(9, 9, 9)
-                            .addComponent(textField62, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(im23, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(9, 9, 9)
-                            .addComponent(textField63, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(im33, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(9, 9, 9)
-                            .addComponent(textField64, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(im43, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(21, 21, 21)
-                .addComponent(jButton2)
+                .addComponent(IMButton)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1031,7 +1047,7 @@ public class Principal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
         
     private void a11tActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_a11tActionPerformed
-        
+      
     }//GEN-LAST:event_a11tActionPerformed
 
     private void a31tActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_a31tActionPerformed
@@ -1222,31 +1238,229 @@ public class Principal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_a44iActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void DimensionButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DimensionButtonActionPerformed
        //Aqui es la comparacion de la primer ventana deberas hacer tu verificacion para proceder
         //y capturar lo que el usuario ingreso, tambien deberas poner los textfield que no deban ser visualizados
-        jFrame1.setVisible(false);
-        jFrame2.setVisible(true);
-        
-       
-    }//GEN-LAST:event_jButton1ActionPerformed
+        try{
+            int aux= (int) Integer.parseInt(dimensionM.getText());
+            if (aux >0 && aux<4 ){
+                //Lleno la lista
+                ArrayList<java.awt.TextField> lista = new ArrayList<>();
+                lista.add(im11);
+                lista.add(im12);
+                lista.add(im13);
+                lista.add(im14);
+                lista.add(im21);
+                lista.add(im22);
+                lista.add(im23);
+                lista.add(im24);
+                lista.add(im31);
+                lista.add(im32);
+                lista.add(im33);
+                lista.add(im34);
+                lista.add(im41);
+                lista.add(im42);
+                lista.add(im43);
+                lista.add(im44);
+                //Exito entonces aux es el numero de opcion
+                //aqui estarian los case 1, 2, 3 
+                //case 1 2x2 elementos involucrados son im11, im12, im21, im22
+                //case 2 3x3 elementos involucrados son im11, im12, im13, im21, im22, im23, im31,im32, im33
+                //cas 3 4x4 todos los elementos involucrados im11, im12, im13, im14, im21, im22, im23, im24, etc
+                func.setMatrizIngresar(lista, aux);
+                    jFrame1.setVisible(false);
+                    jFrame2.setVisible(true);
+                
+            }else{
+                Integer.parseInt(JOptionPane.showInputDialog("SOLO PUEDE ESCOJER LAS SIG OPCIONES 1, 2 O 3 :D", S));
+            }
+        }catch(NumberFormatException e){
+            //el usuario ingreso un valor como letra o asi y eso no esta permitido
+        }
+    }//GEN-LAST:event_DimensionButtonActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void IMButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IMButtonActionPerformed
         //Aqui es la comparacion de la segunda ventana deberas hacer tu verificacion para proceder
         //y capturar lo que el usuario ingreso, tambien deberas poner los textfield que no deban ser visualizados
-        jFrame2.setVisible(false);
-        setVisible(true);
-    }//GEN-LAST:event_jButton2ActionPerformed
+        float a,b,c,d,e,f,g,h,i,j,k,l,m,n,ñ,o,opcion,a11,a12,a13,a14,a21,a22,a23,a24,a31,a32,a33,a34,a41,a42,a43,a44,determ,ai,ai11,ai12,ai13,ai14,ai21,ai22,ai23,ai24,ai31,ai32,ai33,ai34,ai41,ai42,ai43,ai44;
+        switch (dimensionM.getText()){
+            case "1":
+                 a = Float.parseFloat(im11.getText());
+                 b = Float.parseFloat(im12.getText());
+                 c = Float.parseFloat(im21.getText());
+                 d = Float.parseFloat(im22.getText());
+                 /** Operacion Determinate **/
+                determ = (a*d)-((b*c));
+                 ai=1/determ;
+                 if (determ==0) {
+               JOptionPane.showMessageDialog(null,"Esta matriz no tiene Inversa" +
+                       "\n"+a + "   " +b+
+                       "\n"+c + "   " +d);
+
+               break;
+           } else {
+                 String det=String.valueOf(determ);
+                 val_det.setText(det);
+                 /** Operacion Matriz Transpuesta **/
+                 
+                 String uno =String.valueOf(a);
+                 a11t.setText(uno);
+                 String dos =String.valueOf(c);
+                 a12t.setText(dos);
+                 String tres =String.valueOf(b);
+                 a21t.setText(tres);
+                 String cuatr =String.valueOf(d);
+                 a22t.setText(cuatr);
+                 
+               /** Operacion Matriz adjunta **/
+               
+               String ad11 =String.valueOf(d);
+                 a11a.setText(ad11);
+                 String ad12 =String.valueOf(-(b));
+                 a12a.setText(ad12);
+                 String ad21 =String.valueOf(-(c));
+                 a21a.setText(ad21);
+                 String ad22 =String.valueOf(a);
+                 a22a.setText(ad22);
+                 
+                 /** Operacion Matriz Inverza **/
+               
+               String i11 =String.valueOf(d*ai);
+                 a11i.setText(i11);
+                 String i12 =String.valueOf(-(b)*ai);
+                 a12i.setText(i12);
+                 String i21 =String.valueOf(-(c)*ai);
+                 a21i.setText(i21);
+                 String i22 =String.valueOf(a*ai);
+                 a22i.setText(i22);
+                 
+                 
+                 
+                 
+                 jFrame2.setVisible(false);
+                 setVisible(true);
+                     }
+                 break;
+            case "2":
+                
+                 a = Float.parseFloat(im11.getText());
+                 b = Float.parseFloat(im12.getText());
+                 c = Float.parseFloat(im13.getText());
+                 d = Float.parseFloat(im21.getText());
+                 e = Float.parseFloat(im22.getText());
+                 f = Float.parseFloat(im23.getText());
+                 g = Float.parseFloat(im31.getText());
+                 h = Float.parseFloat(im32.getText());
+                 i = Float.parseFloat(im33.getText());
+                 /** Operacion Determinate **/
+                determ = (a*e*i)+(d*h*c)+(g*b*f)-((c*e*g)+(h*f*a)+(i*d*b));
+                 ai=1/determ;
+                 if (determ==0) {
+               JOptionPane.showMessageDialog(null,"Esta matriz no tiene Inversa" +
+                       "\n"+a + "   " +b+ "   " +c +
+                       "\n"+d + "   " +e+ "   " +f +
+                       "\n"+g + "   " +h+ "   " +i);
+
+               break;
+           } else {
+                 String det=String.valueOf(determ);
+                 val_det.setText(det);
+                 
+                 /** Operacion Matriz Transpuesta **/
+                 
+                 String uno =String.valueOf(a);
+                 a11t.setText(uno);
+                 String dos =String.valueOf(d);
+                 a12t.setText(dos);
+                 String tres =String.valueOf(g);
+                 a13t.setText(tres);
+                 String cuatr =String.valueOf(b);
+                 a21t.setText(cuatr);
+                 String cin =String.valueOf(e);
+                 a22t.setText(cin);
+                 String se =String.valueOf(h);
+                 a23t.setText(se);
+                 String sie =String.valueOf(c);
+                 a31t.setText(sie);
+                 String oc =String.valueOf(f);
+                 a32t.setText(oc);
+                 String nine =String.valueOf(i);
+                 a33t.setText(nine);
+                 
+               /** Operacion Matriz adjunta **/
+               
+               String ad11 =String.valueOf((e*i)-(f*h));
+                 a11a.setText(ad11);
+                 String ad12 =String.valueOf(-((d*i)-(f*g)));
+                 a12a.setText(ad12);
+                 String ad13 =String.valueOf((d*h)-(e*g));
+                 a13a.setText(ad13);
+                 String ad21 =String.valueOf(-((b*i)-(c*h)));
+                 a21a.setText(ad21);
+                 String ad22 =String.valueOf((a*i)-(c*g));
+                 a22a.setText(ad22);
+                 String ad23 =String.valueOf(-((a*h)-(b*g)));
+                 a23a.setText(ad23);
+                 String ad31 =String.valueOf((b*f)-(e*c));
+                 a31a.setText(ad31);
+                 String ad32 =String.valueOf(-((a*f)-(d*c)));
+                 a32a.setText(ad32);
+                 String ad33 =String.valueOf((a*e)-(d*b));
+                 a33a.setText(ad33);
+                 
+                 /** Operacion Matriz Inverza **/
+               
+               String i11 =String.valueOf((e*i)-(f*h));
+                 a11i.setText(i11);
+                 String i12 =String.valueOf(-((d*i)-(f*g)));
+                 a12i.setText(i12);
+                 String i13 =String.valueOf((d*h)-(e*g));
+                 a13i.setText(i13);
+                 String i21 =String.valueOf(-((b*i)-(c*h)));
+                 a21i.setText(i21);
+                 String i22 =String.valueOf((a*i)-(c*g));
+                 a22i.setText(i22);
+                 String i23 =String.valueOf(-((a*h)-(b*g)));
+                 a23i.setText(i23);
+                 String i31 =String.valueOf((b*f)-(e*c));
+                 a31i.setText(i31);
+                 String i32 =String.valueOf(-((a*f)-(d*c)));
+                 a32i.setText(i32);
+                 String i33 =String.valueOf((a*e)-(d*b));
+                 a33i.setText(i33);
+                 
+                 jFrame2.setVisible(false);
+                 setVisible(true);
+                     }
+                break;
+                
+            case "3":
+                //4x4 ta hard LOL 
+                break;
+            default:
+                JOptionPane.showMessageDialog(null, "Ingrese ynnuemro de 1 a 3 segun su matriz ");
+                break;
+        }             
+    }//GEN-LAST:event_IMButtonActionPerformed
 
     private void val_detActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_val_detActionPerformed
-        // TODO add your handling code here:
     }//GEN-LAST:event_val_detActionPerformed
 
     private void SActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SActionPerformed
     System.exit(0);
     }//GEN-LAST:event_SActionPerformed
 
+    private void im31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_im31ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_im31ActionPerformed
+
+    private void im11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_im11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_im11ActionPerformed
+   
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton DimensionButton;
+    private javax.swing.JButton IMButton;
     private javax.swing.JButton S;
     public static java.awt.TextField a11a;
     public static java.awt.TextField a11i;
@@ -1296,8 +1510,23 @@ public class Principal extends javax.swing.JFrame {
     public static java.awt.TextField a44a;
     public static java.awt.TextField a44i;
     public static java.awt.TextField a44t;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JTextPane dimensionM;
+    public static java.awt.TextField im11;
+    public static java.awt.TextField im12;
+    public static java.awt.TextField im13;
+    public static java.awt.TextField im14;
+    public static java.awt.TextField im21;
+    public static java.awt.TextField im22;
+    public static java.awt.TextField im23;
+    public static java.awt.TextField im24;
+    public static java.awt.TextField im31;
+    public static java.awt.TextField im32;
+    private java.awt.TextField im33;
+    public static java.awt.TextField im34;
+    public static java.awt.TextField im41;
+    public static java.awt.TextField im42;
+    public static java.awt.TextField im43;
+    public static java.awt.TextField im44;
     private javax.swing.JFrame jFrame1;
     private javax.swing.JFrame jFrame2;
     private javax.swing.JLabel jLabel1;
@@ -1319,27 +1548,11 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTextPane jTextPane1;
     private java.awt.Label label1;
     private java.awt.Label label2;
     private java.awt.Label label3;
     private java.awt.Label label4;
-    private java.awt.TextField textField49;
-    private java.awt.TextField textField50;
-    private java.awt.TextField textField51;
-    private java.awt.TextField textField52;
-    private java.awt.TextField textField53;
-    private java.awt.TextField textField54;
-    private java.awt.TextField textField55;
-    private java.awt.TextField textField56;
-    private java.awt.TextField textField57;
-    private java.awt.TextField textField58;
-    private java.awt.TextField textField59;
-    private java.awt.TextField textField60;
-    private java.awt.TextField textField61;
-    private java.awt.TextField textField62;
-    private java.awt.TextField textField63;
-    private java.awt.TextField textField64;
     public static java.awt.TextField val_det;
     // End of variables declaration//GEN-END:variables
+    public static Funciones func= new Funciones();
 }
