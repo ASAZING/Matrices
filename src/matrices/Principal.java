@@ -1410,23 +1410,23 @@ public class Principal extends javax.swing.JFrame {
                  
                  /** Operacion Matriz Inverza **/
                
-               String i11 =String.valueOf((e*i)-(f*h));
+               String i11 =String.valueOf((e*i)-(f*h)*ai);
                  a11i.setText(i11);
-                 String i12 =String.valueOf(-((d*i)-(f*g)));
+                 String i12 =String.valueOf(-((d*i)-(f*g))*ai);
                  a12i.setText(i12);
-                 String i13 =String.valueOf((d*h)-(e*g));
+                 String i13 =String.valueOf((d*h)-(e*g)*ai);
                  a13i.setText(i13);
-                 String i21 =String.valueOf(-((b*i)-(c*h)));
+                 String i21 =String.valueOf(-((b*i)-(c*h))*ai);
                  a21i.setText(i21);
-                 String i22 =String.valueOf((a*i)-(c*g));
+                 String i22 =String.valueOf((a*i)-(c*g)*ai);
                  a22i.setText(i22);
-                 String i23 =String.valueOf(-((a*h)-(b*g)));
+                 String i23 =String.valueOf(-((a*h)-(b*g))*ai);
                  a23i.setText(i23);
-                 String i31 =String.valueOf((b*f)-(e*c));
+                 String i31 =String.valueOf((b*f)-(e*c)*ai);
                  a31i.setText(i31);
-                 String i32 =String.valueOf(-((a*f)-(d*c)));
+                 String i32 =String.valueOf(-((a*f)-(d*c))*ai);
                  a32i.setText(i32);
-                 String i33 =String.valueOf((a*e)-(d*b));
+                 String i33 =String.valueOf((a*e)-(d*b)*ai);
                  a33i.setText(i33);
                  
                  jFrame2.setVisible(false);
